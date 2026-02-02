@@ -183,3 +183,5 @@ The Loom video demonstrates:
 Through Task 1, I gained practical exposure to Strapi setup, headless CMS concepts, local development, content‑type creation, and GitHub workflow. This task helped me understand how Strapi fits into modern backend and DevOps workflows, especially for API‑based applications.
 
 **Task 1 completed successfully.**
+
+Branch:akash
