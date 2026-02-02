@@ -1,61 +1,159 @@
-# 🚀 Getting started with Strapi
+Strapi Task 1 – DevOps Internship
+Name: Akash K
+Program: DevOps Pre‑Internship
+Company: PearlThoughts
 
-Strapi comes with a full featured [Command Line Interface](https://docs.strapi.io/dev-docs/cli) (CLI) which lets you scaffold and manage your project in seconds.
+Introduction: What is Strapi (My Understanding)
+Strapi is an open‑source Headless Content Management System (CMS) that allows developers to create, manage, and deliver content through APIs such as REST and GraphQL.
 
-### `develop`
+From my understanding gained during this task, Strapi is designed to decouple content management from frontend presentation. This allows backend teams to manage structured content efficiently, while frontend applications (web or mobile) consume the content via APIs.
 
-Start your Strapi application with autoReload enabled. [Learn more](https://docs.strapi.io/dev-docs/cli#strapi-develop)
+Key points about Strapi:
 
-```
+Provides a powerful web‑based Admin Panel
+
+Allows creation of custom content types without writing backend code
+
+Exposes content securely via APIs
+
+Highly flexible and suitable for modern, API‑driven applications
+
+Commonly used in cloud‑native and DevOps‑oriented environments
+
+Objective of Task 1
+The objective of this task was to gain hands‑on experience with Strapi by performing the following:
+
+Clone and explore the official Strapi repository
+
+Run Strapi locally
+
+Understand the project folder structure
+
+Access and use the Admin Panel
+
+Create a sample content type
+
+Push the setup to GitHub
+
+Document the complete workflow
+
+Technology Stack Used
+Node.js: v18 (LTS)
+
+Strapi: v5
+
+Database: SQLite (default)
+
+Version Control: Git and GitHub
+
+Operating System: Windows
+
+Strapi Repository Exploration
+As part of the task, I cloned the official Strapi repository to understand its internal structure.
+
+Key directories explored:
+
+packages/ – Core Strapi packages and modules
+
+examples/ – Sample projects for reference
+
+docs/ – Official documentation
+
+scripts/ – Build and automation scripts
+
+This helped me understand how Strapi is modularized and how different components interact within the framework.
+
+Local Strapi Setup
+For running Strapi locally in a stable and recommended way, I used the official Strapi CLI.
+
+Creating the Strapi Application
+npx create-strapi-app my-strapi-app --quickstart
+This command:
+
+Created a new Strapi project
+
+Configured SQLite automatically
+
+Started the development server
+
+Opened the Admin Panel
+
+Running the Application
 npm run develop
-# or
-yarn develop
-```
+Admin Panel URL:
 
-### `start`
+http://localhost:1337/admin
+Admin Panel Configuration
+Created an administrator account
 
-Start your Strapi application with autoReload disabled. [Learn more](https://docs.strapi.io/dev-docs/cli#strapi-start)
+Logged into the Strapi Dashboard
 
-```
-npm run start
-# or
-yarn start
-```
+Accessed the Content‑Type Builder and Content Manager
 
-### `build`
+Content Type Creation
+Using the Content‑Type Builder, I created a Collection Type named Article.
 
-Build your admin panel. [Learn more](https://docs.strapi.io/dev-docs/cli#strapi-build)
+Fields Defined
+title – Text (Required)
 
-```
-npm run build
-# or
-yarn build
-```
+description – Rich Text
 
-## ⚙️ Deployment
+publishedDate – Date
 
-Strapi gives you many possible deployment options for your project including [Strapi Cloud](https://cloud.strapi.io). Browse the [deployment section of the documentation](https://docs.strapi.io/dev-docs/deployment) to find the best solution for your use case.
+The content type was saved successfully and the server restarted as required.
 
-```
-yarn strapi deploy
-```
+Sample Content Entry
+Created one Article entry
 
-## 📚 Learn more
+Added sample data
 
-- [Resource center](https://strapi.io/resource-center) - Strapi resource center.
-- [Strapi documentation](https://docs.strapi.io) - Official Strapi documentation.
-- [Strapi tutorials](https://strapi.io/tutorials) - List of tutorials made by the core team and the community.
-- [Strapi blog](https://strapi.io/blog) - Official Strapi blog containing articles made by the Strapi team and the community.
-- [Changelog](https://strapi.io/changelog) - Find out about the Strapi product updates, new features and general improvements.
+Published the entry
 
-Feel free to check out the [Strapi GitHub repository](https://github.com/strapi/strapi). Your feedback and contributions are welcome!
+Verified it under the Published section
 
-## ✨ Community
+This confirmed that the content type and database configuration were working correctly.
 
-- [Discord](https://discord.strapi.io) - Come chat with the Strapi community including the core team.
-- [Forum](https://forum.strapi.io/) - Place to discuss, ask questions and find answers, show your Strapi project and get feedback or just talk with other Community members.
-- [Awesome Strapi](https://github.com/strapi/awesome-strapi) - A curated list of awesome things related to Strapi.
+Project Structure Overview
+Important directories and files in the project include:
 
----
+config/ – Server, database, and plugin configuration
 
-<sub>🤫 Psst! [Strapi is hiring](https://strapi.io/careers).</sub>
+src/api/ – API logic for content types
+
+src/api/article/ – Schema, routes, controllers, and services for Article
+
+public/ – Static assets
+
+database/ – SQLite database and migrations
+
+How to Run the Project Locally
+npm install
+npm run develop
+Then access:
+
+http://localhost:1337/admin
+Loom Video Demonstration
+The Loom video demonstrates:
+
+Running Strapi locally
+
+Accessing the Admin Panel
+
+Article content type configuration
+
+Published sample entry
+
+GitHub repository overview
+
+Loom Video Link:
+https://www.loom.com/share/c5d7219c00674fe38a87d6daab7df1bc
+
+GitHub Repository
+Repository Link:
+https://github.com/AKASH8525/strapi-task-1
+
+Conclusion
+Through Task 1, I gained practical exposure to Strapi setup, headless CMS concepts, local development, content‑type creation, and GitHub workflow.
+This task helped me understand how Strapi fits into modern backend and DevOps workflows, especially for API‑based applications.
+
+Task 1 completed successfully.
